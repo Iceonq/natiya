@@ -9,15 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Coustard&family=Inter:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://use.fontawesome.com/526e68a831.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
     <title>Atiya</title>
   </head>
   <body>
+    <img class="main__background" src="/images/first-section__bg.jpg" />
     <header class="main__header">
       <div class="logo__container">
         <img class="header__logo" src="images/logo.png" />
@@ -32,16 +29,13 @@
       </nav>
       <a class="nav__contact">Contact Us</a>
     </header>
-    <section class="first-section">
+    <section class="first-section container">
       <div class="first-section__left">
         <h2 class="first-section__title">Soap your skin with love</h2>
         <p class="first-section__text">
           Each soap Organic, Handcrafted with love.
         </p>
-        <button class="first-section__button">SHOP NOW</button>
-      </div>
-      <div class="first-section__right">
-        <img class="first-section__image" src="images/first-section__bg.jpg" />
+        <button class="first-section__button">CONTACT US</button>
       </div>
     </section>
     <section class="second-section container">
@@ -53,22 +47,98 @@
       <button class="second-section__button">LEARN MORE</button>
     </section>
     <section class="third-section container">
-      <img class="third-section__image" src="images/tumeric/tumeric2.jpeg" />
+      <ul class="third-section__item-list">
+        <li>
+          <div class="third-section__container">
+            <svg class="third-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-compost"></use>
+            </svg>
+          </div>
+          <p class="third-section__description">Only natural ingredients</p>
+        </li>
+        <li>
+          <div class="third-section__container">
+            <svg class="third-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-hand"></use>
+            </svg>
+          </div>
+          <p class="third-section__description">Better for the environment</p>
+        </li>
+        <li>
+          <div class="third-section__container">
+            <svg class="third-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-ecoleaf"></use>
+            </svg>
+          </div>
+          <p class="third-section__description">Hand-made with care</p>
+        </li>
+        <li>
+          <div class="third-section__container">
+            <svg class="third-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-shield"></use>
+            </svg>
+          </div>
+          <p class="third-section__description">Dermatologically safe</p>
+        </li>
+      </ul>
+      <div class="third-section__text">
+        <h3 class="third-section__header">
+          Our Products are natural and organic
+        </h3>
+
+        <div class="third-section__checklist--container">
+          <svg class="third-section__icon--check">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <a class="third-section__checklist">
+            Natural ingredients include plant, animal, mineral and/or microbial
+            ingredients present in (or produced by) nature.</a
+          >
+        </div>
+
+        <div class="third-section__checklist--container">
+          <svg class="third-section__icon--check">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <a class="third-section__checklist">
+            Requires five times less enegry to produce and nearly 20 times less
+            energy to package.</a
+          >
+        </div>
+        <div class="third-section__checklist--container">
+          <svg class="third-section__icon--check">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <a class="third-section__checklist"> Keeps your skin moisturized.</a>
+        </div>
+      </div>
     </section>
 
     <section class="fourth-section container">
-      <div class="fourth-section__text">
-        <h3 class="fourth-section__header">Choose the right soap</h3>
-        <p class="fourth-section__description">
-          Cleanse, moisturize and soothe your skin with all natural handmade
-          soap made with organic oils and plant butters, pure essential oils,
-          organic herbs, and spices.
-        </p>
-        <button class="fourth-section__button">VIEW MORE</button>
+      <div>
+        <img class="fourth-section__image" src="images/rose/rose3.jpeg" />
+        <p class="fourth-section__description">Rose</p>
       </div>
-      <img src="images/tumeric/tumeric1.jpeg" alt="soap" />
-      <img src="images/orchid/orchid2.jpeg" alt="soap" />
-      <img src="images/lavender/lavender1.jpeg" alt="soap" />
+      <div>
+        <img class="fourth-section__image" src="images/coconut/coconut4.jpeg" />
+        <p class="fourth-section__description">Coconut</p>
+      </div>
+      <div>
+        <img
+          class="fourth-section__image"
+          src="images/aloe_vera/aloe_vera3.jpeg"
+        />
+        <p class="fourth-section__description">Aloe Vera</p>
+      </div>
+    </section>
+    <section class="fifth-section">
+      <h3 class="fifth-section__header">Would you like to sell our soaps?</h3>
+      <p class="fifth-section__description">
+        If you have a beauty salon, massage studio, shop, florist, etc. and
+        would like to sell our soaps at your place, please contact us for a
+        quote.
+      </p>
+      <button class="fifth-section__button">CONTACT US</button>
     </section>
     <footer class="main-footer"></footer>
   </body>
