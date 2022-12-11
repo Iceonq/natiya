@@ -28,7 +28,28 @@
       </nav>
       <a class="nav__contact">Contact Us</a>
     </header>
-    <main class="portfolio-main-section container">
+    <button class="mobile__button js-open-menu">
+      <svg class="mobile__icon" width="24" height="16">
+        <use href="./images/icons.svg#icon-mobile-button"></use>
+      </svg>
+    </button>
+    <div class="mobile__container js-menu-container">
+      <button class="mobile__close js-close-menu">
+        <svg height="18" width="18">
+          <use href="./images/icons.svg#icon-modalx"></use>
+        </svg>
+      </button>
+      <div class="mobile__navigation">
+        <ul class="mobile__item-list">
+          <li><a class="mobile__item" href="index.html">Home</a></li>
+          <li><a class="mobile__item" href="products.html">Our Products</a></li>
+          <li class="mobile__item">About Us</li>
+          <li><button class="mobile__button--contactus">CONTACT US</button></li>
+        </ul>
+      </div>
+    </div>
+    
+    <main class="portfolio-main-section ">
       <ul class="portfolio-image-list">
         <li>
           <div class="portfolio-image">
@@ -478,6 +499,11 @@
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </div>
+          <div class="footer__background--icon">
+            <svg class="footer__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="footer__container--mid">
@@ -500,5 +526,6 @@
       </div>
     </footer>
     <h5 class="main__copyright">@2022.Copyright © All Rights Reserved • XXX</h5>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
