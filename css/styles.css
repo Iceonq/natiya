@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+.mobile__container,
+.mobile__button {
+  display: none;
+}
+
 .main__background {
   width: 100%;
   position: absolute;
@@ -219,7 +224,7 @@
 }
 
 .fourth-section__image {
-  width: 264px;
+  width: 198px;
   height: 280px;
   z-index: -1;
 }
@@ -259,7 +264,25 @@
   line-height: 20px;
   padding-top: 40px;
   font-family: "Circular Std";
+  padding-bottom: 16px;
+}
+
+.fifth-section__shipping {
+  display: flex;
+  gap: 8px;
   padding-bottom: 64px;
+}
+
+.fifth-section__icon {
+  fill: #563c1d;
+}
+
+.fifth-section__shipping-text {
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 25px;
+  color: #563c1d;
+  font-family: "Circular Std";
 }
 
 .fifth-section__button {
@@ -289,6 +312,8 @@
 .footer__link-container {
   display: flex;
   gap: 64px;
+  width: 300px;
+  flex-wrap: wrap;
 }
 
 .footer__section-link {
@@ -320,6 +345,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 24px;
+  cursor: pointer;
 }
 
 .footer__container--icon {
@@ -330,6 +356,10 @@
 .footer__icon {
   background-color: #faf3dd;
   fill: #563c1d;
+}
+
+.footer__icon--mobile {
+  display: none;
 }
 
 .portfolio-navbar {
@@ -426,4 +456,200 @@
   width: 370px;
   height: 294px;
   top: -294px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .mobile__container,
+  .mobile__button {
+    display: block;
+  }
+
+  .container {
+    width: 296px;
+  }
+  .main__nav,
+  .nav__contact {
+    display: none;
+  }
+
+  .main__background {
+    height: 368px;
+  }
+
+  .first-section {
+    padding-right: 40px;
+    margin: 0;
+    height: 0;
+  }
+
+  .first-section__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0;
+    width: 254px;
+  }
+
+  .first-section__button {
+    width: 113px;
+    height: 40px;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 40px;
+  }
+
+  .first-section__text {
+    padding: 8px 0;
+  }
+
+  .second-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .second-section__header {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .second-section__button {
+    width: 115px;
+    height: 40px;
+    font-family: "Circular Std";
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer__container--left {
+    margin: 0 auto;
+  }
+
+  .footer__container--mid,
+  .footer__container--right {
+    display: none;
+  }
+
+  .footer__icon--mobile {
+    display: block;
+  }
+
+  .section__header {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .third-section {
+    display: none;
+    width: 296px;
+    height: 592px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .fourth-section {
+    padding-top: 0px;
+  }
+
+  .fourth-section__image-container div:nth-child(2) {
+    display: none;
+  }
+
+  .fourth-section__caption {
+    width: 250px;
+  }
+
+  .fourth-section__image-container {
+    gap: 10px;
+  }
+
+  .portfolio-card-bottom {
+    width: 200px;
+  }
+
+  .mobile__icon {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    fill: #563c1d;
+  }
+
+  .mobile__close {
+    fill: #563c1d;
+  }
+
+  .mobile__button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile__button:hover {
+    fill: #563c1d;
+  }
+
+  .mobile__container {
+    background-color: #fcf9ed;
+    width: 100vw;
+    height: 368px;
+    transform: translateY(-200%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding: 48px 40px;
+    transition: all 250ms ease-in-out;
+  }
+  .mobile__close {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 25px;
+    top: 21px;
+  }
+
+  .mobile__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #563c1d;
+    font-family: "Circular Std";
+    text-decoration: none;
+  }
+
+  .mobile__button--contactus {
+    padding: 11px 12px;
+    height: 40px;
+    background: #563c1d;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Circular Std";
+    color: white;
+    border: none;
+  }
+
+  .mobile__item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .is-open {
+    transform: translateX(0);
+    transition: all 250ms ease-in-out;
+  }
 }
