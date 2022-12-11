@@ -557,6 +557,10 @@
     padding-top: 0px;
   }
 
+  .fourth-section__caption {
+  width: 180px;
+}
+  
   .fourth-section__image-container div:nth-child(2) {
     display: none;
   }
