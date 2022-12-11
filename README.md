@@ -1,1 +1,1 @@
-https://iceonq.github.io/atiya/
+https://iceonq.github.io/natiya/
